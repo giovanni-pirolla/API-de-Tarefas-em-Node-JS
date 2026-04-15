@@ -21,4 +21,4 @@ O projeto consiste em um servidor feito puramente com Node JS para testar a noss
 ```node app.js```
 
 ## Solução do Problema:
-Para garantir que todas as tarefas fossem salvas, foi utilizado o File System (fs) do Node JS para salvar cada tarefa dentro do arquivo "tasks.js". Para buscar por tarefas pelo ID, foi necessário 
+Para garantir que todas as tarefas fossem salvas, foi utilizado o File System (fs) do Node JS para salvar cada tarefa dentro do arquivo "tasks.js". Para buscar por tarefas pelo ID, foi necessário navegar por cada tarefa criada no arquivo de tarefas até que fosse encontrada a tarefa com o ID desejado usando o método .find(). O campo "completed" foi implementado sem muitas dificuldades no arquivo de modelo das tasks, a lógica para alterar esse campo segue a mesma lógica para alterar o nome das tarefas, é necessário escolher o ID da tarefa a ser alterada e por fim definir que queremos alterar o campo "completed" da tarefa, inserindo em seguida seu novo valor.
